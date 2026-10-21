@@ -1,0 +1,751 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/ThreadMetalPlate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/manhole/protos/SquareManhole.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/tables/protos/Table.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/chairs/protos/WoodenChair.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/Monitor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/Keyboard.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/DesktopComputer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/computers/protos/ComputerMouse.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/telephone/protos/OfficeTelephone.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Wrench.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Hammer.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/PlatformCart.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Radiator.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/pallet/protos/WoodenPalletStack.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/cabinet/protos/Cabinet.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/GlossyPaint.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/CardboardBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/GalvanizedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/epson/scara_t6/protos/ScaraT6.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/tools/protos/Bolt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/ElectricConduit.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/fire_extinguisher/protos/FireExtinguisher.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/conveyors/protos/ConveyorBelt.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/CorrugatedMetal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/factory/containers/protos/PlasticCrate.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Plastic.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Orange.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/fruits/protos/Apple.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/bitcraze/crazyflie/protos/Crazyflie.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+  info [
+    "A SCARA Epson T6 sorting fruits with a suction cup in a food industry setting."
+  ]
+  title "SCARA robot in food industry"
+  basicTimeStep 8
+  physicsDisableAngularThreshold 0.1
+}
+Viewpoint {
+  fieldOfView 0.9
+  orientation -0.06473106236893947 0.9643219874360722 0.2566963071645794 0.3535180737270142
+  position -1.5433998802723514 -0.7195074794088089 1.0819463816871184
+  exposure 1.7
+}
+TexturedBackground {
+  texture "factory"
+}
+Floor {
+  translation 0.75 0 0
+  size 7.5 5
+  appearance ThreadMetalPlate {
+  }
+}
+Crazyflie {
+  hidden linearVelocity_0 4.42709805740307e-09 3.292273028139644e-08 6.3893630180313355e-09
+  hidden angularVelocity_0 4.072988376243147e-07 -1.7828565254340744e-08 7.378015480514302e-08
+  translation -1.3745804152044037 -0.7135672343326563 0.9999999971733693
+  rotation -0.0019203762798341993 -0.06339160156332076 -0.9979868821814148 8.625204573791768e-07
+  controller "crazyflie"
+  supervisor TRUE
+}
+SquareManhole {
+  translation 0.560459 -1.782 -0.03
+  rotation 0 0 1 -1.5707963071795863
+}
+Table {
+  translation 3.097723 2.013972 0
+  size 1.8 0.7 0.8
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+WoodenChair {
+  translation 2.921084 1.648051 0
+  rotation 0 0 1 2.0944
+}
+Pose {
+  translation 2.52024 2.10889 0.796
+  rotation 0 0 1 -1.3089953071795861
+  children [
+    Monitor {
+    }
+  ]
+}
+Keyboard {
+  translation 2.59421 1.8802 0.8
+  rotation 0 0 1 1.8326
+}
+DesktopComputer {
+  translation 2.331033 2.125086 0
+  rotation 0 0 -1 1.5708
+}
+ComputerMouse {
+  translation 2.90217 1.90622 0.81
+  rotation 0 0 -1 -1.5707953071795862
+  mass 0
+}
+Table {
+  translation -1.419911 -0.81333 0
+  rotation 0 0 1 -1.5707963071795863
+  name "table(1)"
+  size 1.8 0.7 0.8
+  feetSize 0.05 0.05
+  trayAppearance PBRAppearance {
+    baseColor 0.926 0.912 0.698
+    roughness 0.8
+    metalness 0
+  }
+  legAppearance BrushedAluminium {
+    colorOverride 0.333 0.341 0.325
+  }
+}
+OfficeTelephone {
+  translation -1.34381 -0.209288 0.8
+  rotation 0 0 1 -2.3561953071795863
+  enablePhysics FALSE
+}
+Wrench {
+  translation -1.2388600178683098 -0.5885998543627633 0.7989703472347216
+  rotation -6.759075915337418e-06 -7.48639999969998e-05 0.9999999971748482 -2.617995318291186
+}
+Hammer {
+  translation -1.6039420493826213 -0.35934669070361025 0.8126559380124488
+  rotation -0.0029479706625428165 -0.007680108141789682 0.999966162131451 1.5708362720506315
+}
+PlatformCart {
+  hidden position_0_0 -3.116868277516375e-06
+  hidden position2_0_0 0.0010903846647457895
+  hidden position_0_1 -3.1022282329022786e-06
+  hidden position2_0_1 0.0010902466593717048
+  hidden position_0_2 0.0010903594730199253
+  hidden position_0_3 0.0010902178190900333
+  hidden rotation_2 0.9999997027640579 0.0005436317876022054 -0.0005467506518253758 1.5708002989352792
+  hidden rotation_3 0.9999997028393152 0.000543570105231945 -0.0005466743291885389 1.5708002988518264
+  hidden rotation_4 0.9999997027802203 0.0005451776259317815 -0.0005451796284846972 1.570800297219824
+  hidden rotation_5 0.9999997028574419 0.0005451067992690938 -0.0005451088015618481 1.5708002971426023
+  translation 0.9276448455371185 1.793305712080385 -0.000751891635924401
+  rotation 0.0001646680066590978 2.1941694656136045e-05 0.9999999862015048 -2.8797932967387485
+}
+Radiator {
+  translation 0.528902 2.341308 0.33
+  rotation 0 0 1 -1.5707963071795863
+  numberOfFins 16
+}
+WoodenPalletStack {
+  translation 2.8 0.16 0
+  rotation 0 0 1 -1.5707953071795862
+  palletNumber 5
+  palletSize 0.8 1 0.11
+}
+Cabinet {
+  hidden position_6_0 1.6015341629904709e-06
+  hidden translation_7 -3.187052984349675e-07 -2.5521251778570786e-13 0
+  hidden rotation_7 0 0 1 1.601580243414016e-06
+  hidden position_10_0 -1.3615450153992015e-06
+  hidden translation_11 -2.3030533935470374e-07 1.567634910770721e-13 0
+  hidden rotation_11 0 0 -1 1.361480209887104e-06
+  translation -0.41 2.47 0
+  rotation 0 0 1 -1.5707953071795862
+  name "cabinet(1)"
+  layout [
+    "RightSidedDoor (1, 1, 1, 5, 1.5)"
+    "LeftSidedDoor (2, 1, 2, 5, 1.5)"
+  ]
+  primaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+  secondaryAppearance GlossyPaint {
+    baseColor 0.729 0.741 0.713
+  }
+}
+CardboardBox {
+  translation -1.21 2.18 0.3
+}
+CardboardBox {
+  translation -1.198389 2.100678 0.75
+  rotation 0 0 1 2.094395
+  name "cardboard box(1)"
+  size 0.4 0.6 0.3
+}
+Solid {
+  translation -0.38 2.16 0.06
+  children [
+    DEF GEOM Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/toys/protos/PaperBoat/textures/newspaper.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry Mesh {
+        url [
+          "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/toys/protos/PaperBoat/meshes/geom.obj"
+        ]
+      }
+    }
+  ]
+  name "solid(2)"
+  immersionProperties [
+    ImmersionProperties {
+      fluidName "water"
+      dragForceCoefficients 0.05 0 0
+      viscousResistanceForceCoefficient 200
+    }
+  ]
+}
+Pose {
+  translation 1.77 2.67 1.05
+  rotation 1 0 0 1.5707996938995747
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.23 0.3 0.01
+      }
+    }
+  ]
+}
+SolidBox {
+  translation 0.345 -0.2464 0.215
+  rotation 1 0 0 4.692820414042842e-06
+  size 1.5 0.4 0.54
+  appearance GalvanizedMetal {
+  }
+}
+SolidBox {
+  translation -0.015 -0.8323 0.2
+  rotation 0 0 1 -1.5707953071795862
+  name "box(2)"
+  size 0.77 0.8 0.39
+  appearance GalvanizedMetal {
+  }
+}
+DEF SCARA_ARM ScaraT6 {
+  hidden position_0_0 -0.06720616119341274
+  hidden translation_16 0.00013544905002161461 0.004029334877798224 2.7755575615628914e-17
+  hidden rotation_16 0 0 -1 0.06720616119341492
+  hidden position_16_0 0.21826234074801143
+  hidden linearVelocity_16 0.41990395958875687 -0.015661732617899146 2.8855286708853296e-06
+  hidden angularVelocity_16 -1.9101273538715888e-05 3.8025689845074825e-05 2.904556281963438
+  hidden translation_18 0.0012487412945179901 -0.0013971105432544614 0
+  hidden rotation_18 0 0 1 0.21826234074801154
+  hidden position_18_0 -1.4640091067809902
+  hidden linearVelocity_18 1.584227784544667 0.014795765242009137 1.1366191941802529e-05
+  hidden angularVelocity_18 -5.798141717785611e-05 2.1311602997156662e-05 7.053708903051152
+  hidden rotation_27 0 0 -1 1.46400910678099
+  hidden position_27_0 -7.85505271015468e-06
+  hidden linearVelocity_27 2.7290806971924617 0.18073422590137067 1.959432251090465e-05
+  hidden angularVelocity_27 -9.726127805297576e-05 0.00011998277529554084 -0.12009639423225327
+  hidden translation_28 0 0 -7.85505271015468e-06
+  hidden linearVelocity_28 2.729235092440156 0.18085486648412208 1.9673680001370123e-05
+  hidden angularVelocity_28 -0.00010468004357970489 0.0001294292535495314 -0.12009639599858957
+  translation 0.4 -0.33 0.494
+  rotation 0 0 -1 1.5708
+  controller "scara_food_industry"
+  supervisor TRUE
+  staticBase TRUE
+  handSlot [
+    DEF VACCUM Pose {
+      children [
+        Shape {
+          appearance ElectricConduit {
+          }
+          geometry Cylinder {
+            height 0.04
+            radius 0.11
+          }
+        }
+      ]
+    }
+  ]
+}
+Bolt {
+  translation 0.47 -0.41 0.471
+  rotation 0 1 0 1.5708
+  screwRadius 0.0042
+  enablePhysics FALSE
+}
+Bolt {
+  translation 0.33 -0.41 0.471
+  rotation 9.58979e-09 -1 9.58976e-09 -1.5707953071795862
+  name "bolt(3)"
+  screwRadius 0.0042
+  enablePhysics FALSE
+}
+Bolt {
+  translation 0.47 -0.266 0.471
+  rotation 0 1 0 1.5708
+  name "bolt(1)"
+  screwRadius 0.0042
+  enablePhysics FALSE
+}
+Bolt {
+  translation 0.33 -0.266 0.471
+  rotation 0 1 0 1.5708
+  name "bolt(2)"
+  screwRadius 0.0042
+  enablePhysics FALSE
+}
+FireExtinguisher {
+  translation -0.7577083953553605 1.7899997692202858 -0.0011771999963371416
+  rotation 0.0005935750400176128 -0.0007934038346620188 -0.9999995090893931 1.570800475436718
+}
+ConveyorBelt {
+  hidden translation_1 -1.570975927123186e-08 -3.30641791723707e-09 0.299975473849084
+  hidden rotation_1 0.0034452552214808982 0.9999940561109579 -0.00013401198927193676 2.8822236253721162e-05
+  hidden linearVelocity_1 -4.7581645249897936e-07 -1.0340311343258635e-07 3.5218024677874385e-08
+  hidden angularVelocity_1 7.105625284996455e-08 -3.045317864618494e-07 1.2049601898067138e-07
+  translation 2.48 -0.83 0
+  rotation 0 0 1 3.14159
+  size 4.12 0.7 0.4
+  appearance CorrugatedMetal {
+    textureTransform TextureTransform {
+      scale 6 3.1
+    }
+  }
+  borderHeight 0.1
+  speed 0.1
+}
+PlasticCrate {
+  translation 0.58 0.42 -9.80999999999621e-05
+  rotation 0.00855322031036058 -0.005731912002601556 0.9999469923986556 9.261799962546016e-17
+  size 0.6 0.45 0.4
+  mass 1
+}
+PlasticCrate {
+  hidden linearVelocity_0 3.638495310491962e-08 -4.069283300194174e-09 2.279465222129238e-09
+  hidden angularVelocity_0 1.3229265394922246e-07 9.036397627598403e-07 -1.9933358029768402e-10
+  translation -0.07998708659258214 -0.8199934552111416 0.39482832489799835
+  rotation 0.779895470412581 0.5490275539484354 -0.30055249164719483 0.00014071374580253734
+  name "plastic crate(2)"
+  size 0.3 0.44 0.1
+  color 0.913725 0.72549 0.431373
+  mass 1
+}
+PlasticCrate {
+  hidden linearVelocity_0 4.562969783759429e-08 4.3164101782813236e-08 4.988735042843473e-10
+  hidden angularVelocity_0 -1.0618182330465808e-06 1.1345253951198279e-06 7.480288665457797e-10
+  translation 0.22213895074625803 -0.8302325729341823 0.39482832511534743
+  rotation -0.4436265576084871 0.8961339398389037 -0.011808439915921393 0.0001775724675483709
+  name "plastic crate(3)"
+  size 0.3 0.44 0.1
+  color 0.913725 0.72549 0.431373
+  mass 1
+}
+PlasticCrate {
+  translation -0.1 0.42 -9.80999999999621e-05
+  rotation 0.03901267375028447 -0.005683524547299119 -0.9992225522052502 4.6703257749130944e-17
+  name "plastic crate(1)"
+  size 0.6 0.45 0.4
+  color 0.827451 0.843137 0.811765
+  mass 1
+}
+DEF WALL1 Pose {
+  translation 0.75 2.5 1
+  rotation 1 0 0 1.5708
+  children [
+    DEF wall_long Shape {
+      appearance Roughcast {
+      }
+      geometry Plane {
+        size 7.5 2
+      }
+    }
+  ]
+}
+DEF WALL2 Pose {
+  translation 0.75 -2.5 1
+  rotation 1 0 0 -1.5708
+  children [
+    USE wall_long
+  ]
+}
+DEF WALL3 Pose {
+  translation 4.5 0 1
+  rotation -0.5773509358554485 0.5773489358556708 0.5773509358554485 -2.094395307179586
+  children [
+    DEF wall_short Shape {
+      appearance Roughcast {
+      }
+      geometry Plane {
+        size 5 2
+      }
+    }
+  ]
+}
+DEF WALL4 Pose {
+  translation -3 0 1
+  rotation 0.5773506025225371 0.5773496025232256 0.5773506025225371 2.0944
+  children [
+    USE wall_short
+  ]
+}
+Pose {
+  translation 4.5 -0.83 0.65
+  children [
+    Shape {
+      appearance Plastic {
+        colorOverride 0 0 0
+      }
+      geometry Box {
+        size 0.001 0.7 0.5
+      }
+    }
+  ]
+}
+Orange {
+  hidden linearVelocity_0 -0.049641841898823966 -0.01706247148784112 -1.4006147135930543e-05
+  hidden angularVelocity_0 0.34165052080426633 1.0083509478977657 -0.12019786697207883
+  translation 0.6595540492478581 -0.6904580076467817 0.44986451495634944
+  rotation 0.06409432637737364 -0.23160233363208843 0.9706967994087554 -2.648185025277979
+  name "orange(2)"
+}
+Orange {
+  hidden linearVelocity_0 0.002922945276148124 0.012430317470172847 -3.9967202781409567e-07
+  hidden angularVelocity_0 -0.24888859236000552 2.060894608572683 -0.4041366925209763
+  translation 0.8228288912588941 -1.0247859526642895 0.4498688701735538
+  rotation 0.814173006598707 -0.39736492004994783 -0.42334788961292874 2.985154384864262
+  name "orange(7)"
+}
+Orange {
+  hidden linearVelocity_0 0.0008481412481562971 0.0003131587938236688 2.9268184425653986e-06
+  hidden angularVelocity_0 -0.006271816558195242 2.0193550423669184 -0.01718188995122871
+  translation 0.4700672882791294 -1.1299874191585246 0.44985860197382027
+  rotation 0.08712587114114118 -0.7587512164708398 -0.6455274386746996 2.962342053526604
+  name "orange(24)"
+}
+Orange {
+  hidden linearVelocity_0 -0.034975867507083945 -0.0033759767469526934 -1.3013594256595736e-06
+  hidden angularVelocity_0 0.06759808511801388 1.3020256712663876 0.051950667867310917
+  translation 1.384223665943808 -0.7702305497077625 0.44988502543706066
+  rotation 0.5286549261246503 0.5934599360502821 0.6069013703950055 -1.493232936306475
+  name "orange(13)"
+}
+Orange {
+  hidden linearVelocity_0 -0.018136154122828107 -0.010624988978655743 -6.298628463110824e-07
+  hidden angularVelocity_0 0.21274683246483642 1.6392170097416388 0.18423051588709705
+  translation 1.9824312490526537 -0.722291842640857 0.44990226224934426
+  rotation -0.7022847675490956 -0.3069428021328457 0.6423256350850008 3.006791445057452
+  name "orange(10)"
+}
+Orange {
+  hidden linearVelocity_0 -0.029252215555861157 -0.03429575840459789 1.0751013472488552e-05
+  hidden angularVelocity_0 0.686736331504241 1.4166474357926524 -0.2491132524619752
+  translation 0.7611224362114392 -0.6861012244665089 0.4498666741137118
+  rotation 0.12425033553259891 -0.08509155713648159 0.988595610461692 2.7000371029744588
+  name "orange(11)"
+}
+Orange {
+  hidden linearVelocity_0 -0.015981546537389934 -0.007078683042735611 -5.766378405784652e-07
+  hidden angularVelocity_0 0.14174999194647386 1.6823601573827087 -0.2667657730493381
+  translation 1.9299438246557108 -0.6173570195462298 0.44990073902516053
+  rotation 0.9569983579087086 0.23732080822011586 0.16683218198473093 1.9878647400665035
+  name "orange(12)"
+}
+Orange {
+  hidden linearVelocity_0 -0.03432219585452737 -0.00296289971776752 -1.3459577479516394e-06
+  hidden angularVelocity_0 0.05934798143264197 1.3151149571624297 -0.7122599587493721
+  translation 1.031182216034494 -0.5671341052660692 0.4498748289287088
+  rotation -0.359996728696795 -0.15499156398896177 0.919989114294219 -2.403737980731689
+  name "orange(17)"
+}
+Orange {
+  hidden linearVelocity_0 0.02324573401380945 0.014177918161899162 2.2774042461185933e-07
+  hidden angularVelocity_0 -0.283882005587383 2.4678298317808527 -0.3887722930530845
+  translation 0.9214025244062596 -0.8577973086435428 0.44987169467174803
+  rotation -0.3230031296467934 -0.3633175759353369 0.8738817524441435 1.7427214702525786
+  name "orange(16)"
+}
+Orange {
+  hidden linearVelocity_0 -0.030116356351084 -0.01738638533390801 -1.3136182435295593e-06
+  hidden angularVelocity_0 0.34813243945971045 1.3993308322042672 0.1475433221060353
+  translation 0.8402405588120294 -0.6126858466277306 0.4498693310439937
+  rotation 0.8513892335234166 -0.427515527335403 -0.3039191453784077 3.1007163665797215
+  name "orange(15)"
+}
+Orange {
+  hidden linearVelocity_0 -0.0012000586309599043 -0.003652813150542894 -5.084944898442578e-07
+  hidden angularVelocity_0 0.0731450989598175 1.978338499944943 -0.13238855377427622
+  translation 0.7411045078743866 -0.5570622624825423 0.4498664682279392
+  rotation 0.8389115922453402 -0.004726315211518235 -0.5442471886384985 2.830769994104629
+  name "orange(9)"
+}
+Orange {
+  hidden linearVelocity_0 0.0004347219818978844 -0.003964332558329852 -5.198204736634647e-07
+  hidden angularVelocity_0 0.07937729065745813 2.011072529860601 0.04483016474528135
+  translation 0.5620107869100924 -0.6128916231945964 0.4498613119250084
+  rotation 0.13854090959625692 0.9215255716578725 -0.36276305923959934 1.0583135588981192
+  name "orange(18)"
+}
+Orange {
+  hidden linearVelocity_0 -0.002136407989336936 -0.0009360999705480691 -5.685330551831242e-07
+  hidden angularVelocity_0 0.01874171175402008 1.959589506625829 0.03467327125241331
+  translation 0.6286794792256423 -0.5369115908262947 0.44986322590402456
+  rotation 0.9726663757365663 -0.13624398148085162 -0.18803643003880355 -2.6456020956287634
+  name "orange(1)"
+}
+Orange {
+  hidden linearVelocity_0 0.004351024285127752 0.012963535962182943 -3.8421262983827953e-07
+  hidden angularVelocity_0 -0.2595803978273325 2.089490041051194 0.10352697899234449
+  translation 0.7250087605402573 -0.9670937337334803 0.44986604506126704
+  rotation -0.9569214896426487 0.2902237874529596 0.008450790291648021 1.9215331791352184
+  name "orange(8)"
+}
+Orange {
+  hidden linearVelocity_0 3.794598218596611e-10 -0.00013471496103824022 -5.550504466420702e-07
+  hidden angularVelocity_0 0.0026958156147607556 2.002368101766971 -0.0026942994476008286
+  translation 0.47000079021240165 -0.5309165113263568 0.44985865013288073
+  rotation 0.8040600035862098 -0.3373435401021126 -0.489578233364514 -2.579507335401088
+  name "orange(14)"
+}
+Orange {
+  hidden linearVelocity_0 -0.03000789638554329 -0.006258397061363612 7.705652244793337e-06
+  hidden angularVelocity_0 0.1253124206552954 1.401511566751589 0.11410145973883029
+  translation 0.9179521396042709 -1.071746522204787 0.4498713293342506
+  rotation 0.5889431657499044 0.6827473910606012 -0.4324372180056004 2.3441513132371408
+  name "orange(20)"
+}
+Orange {
+  hidden linearVelocity_0 0.000497772068201265 0.0005278110655182348 -1.0682680491415374e-07
+  hidden angularVelocity_0 -0.010537639445411032 2.0123337392250686 -1.0062801156178367
+  translation 2.028172316397572 -1.0992990508699167 0.44990361806437185
+  rotation 0.27702379151114065 0.9600504032163244 -0.039510026840857526 -1.372412423497952
+  name "orange(23)"
+}
+Orange {
+  hidden linearVelocity_0 0.0077518398199302565 0.00035148577917934687 6.664795474198765e-08
+  hidden angularVelocity_0 -0.007029132592975874 2.157586106089364 -0.2468787074004419
+  translation 1.916530504262365 -1.122189414514998 0.4499004025908337
+  rotation 0.7405919584661973 -0.25349801446342746 0.6223040315780561 -1.47832676777821
+  name "orange(22)"
+}
+Orange {
+  hidden linearVelocity_0 4.116625638700651e-05 -0.007087662196489831 -5.767415881302904e-07
+  hidden angularVelocity_0 0.14191499624737636 2.003191522772627 0.1243382448679772
+  translation 0.47158984909401436 -0.8714214092981917 0.44985873149846817
+  rotation -0.40176643625691744 -0.13045989998565383 0.9064016467290588 2.671792997879611
+  name "orange(19)"
+}
+DEF fruit1 Orange {
+  hidden linearVelocity_0 0.0018595193125866044 0.003569267115707699 -3.9528531879498933e-07
+  hidden angularVelocity_0 -0.0714821952215831 0.03722782511523694 -0.0803136440257727
+  translation 0.22292194903820955 -0.859510646085109 0.4482716428209735
+  rotation -0.5819256283286152 0.38084804031518066 0.7185522481228717 2.4529984317405176
+  name "orange(21)"
+}
+Orange {
+  hidden linearVelocity_0 -2.146880879154665e-07 3.4457769921432338e-06 -2.9105027230968973e-07
+  hidden angularVelocity_0 -6.893819533957735e-05 -4.31476943608722e-06 -6.777384708753928e-05
+  translation 0.3116473237641969 -0.9056387140882411 0.44826116222373724
+  rotation 0.03899813091475282 0.3894021207717954 -0.9202418889202902 -1.844861353084446
+  name "orange(3)"
+}
+Orange {
+  hidden linearVelocity_0 6.948004515117065e-06 5.582954048520666e-08 -1.4369116533667164e-07
+  hidden angularVelocity_0 -1.0401817664687052e-06 0.00013906883284064622 0.0001377510977749167
+  translation 0.20392231448136378 -0.6756283191869266 0.44826018434341536
+  rotation -0.6731720792789014 0.05703763849280934 -0.7372828897204137 2.006585558916091
+  name "orange(4)"
+}
+Orange {
+  hidden linearVelocity_0 5.871031361375766e-08 3.4457872315732576e-06 -1.5857953025980957e-07
+  hidden angularVelocity_0 -6.893819806628882e-05 1.1296550118843652e-06 -6.777425997915189e-05
+  translation 0.31164758058361863 -0.7755173492069661 0.44825090918567756
+  rotation -0.3402479372496434 0.5107580295349525 0.7895299718585325 -1.8867765495328204
+  name "orange(5)"
+}
+Orange {
+  hidden linearVelocity_0 6.947986445069443e-06 5.5791101936327785e-08 -2.5715720582297767e-07
+  hidden angularVelocity_0 -1.0390810021494618e-06 0.00013906883275351762 0.00013775109776218087
+  translation 0.30392232494806337 -0.6756285293304701 0.4482442713986475
+  rotation 0.5028073426595365 -0.6031492774329998 -0.6191895713751205 -2.5614011694085264
+  name "orange(6)"
+}
+DEF fruit0 Apple {
+  hidden linearVelocity_0 0.000735175872871483 -0.0007922063650942432 -6.360207192631864e-07
+  hidden angularVelocity_0 0.01586280067109921 0.014720795292713728 -6.055158636415654e-05
+  translation 0.008566833781303096 -0.7221831868479878 0.4482733719437682
+  rotation -0.7504156810080544 1.3228062035532392e-06 -0.6609661910381408 1.525617219475503
+  name "apple(10)"
+}
+Apple {
+  hidden linearVelocity_0 -0.03722865869559437 0.0034688390977788905 -1.5347968069162177e-05
+  hidden angularVelocity_0 -0.06945611343758222 1.2569020692734019 -0.09610528397500445
+  translation 0.7342093578890633 -1.1128019440746906 0.4498667640228708
+  rotation 0.6531050582063356 0.7445345488463804 0.1382826399784726 -1.2870325678428518
+}
+Apple {
+  hidden linearVelocity_0 -0.01792529145716803 0.0011667097343241103 -8.68936598827456e-07
+  hidden angularVelocity_0 -0.02334195371139326 1.643439085680233 -0.6852904620408594
+  translation 1.1866144498360154 -0.7473931433082311 0.44987932766011063
+  rotation -0.027958799520356518 -0.9558779457044922 -0.29243060449470765 2.042933498943311
+  name "apple(15)"
+}
+Apple {
+  hidden linearVelocity_0 -0.023047443476869878 0.000246433662468846 -4.7506141124522314e-07
+  hidden angularVelocity_0 -0.0049419841020921056 1.5408745008295128 0.4164184769051816
+  translation 3.054345949220626 -1.127315579172263 0.4499331972938581
+  rotation -0.15827763526108057 0.8978842436543925 0.41079444394166303 2.3382523650762566
+  name "apple(6)"
+}
+Apple {
+  hidden linearVelocity_0 -0.06353244936279194 -0.016261822588525918 -2.261540250596559e-06
+  hidden angularVelocity_0 0.3256138180220481 0.7302211456506771 0.190704000043855
+  translation 1.0029211345011728 -0.6692808373462282 0.44987402642407176
+  rotation 0.6144987040088074 -0.6918202210135213 -0.3791782226978476 2.6823885697330634
+  name "apple(7)"
+}
+Apple {
+  hidden linearVelocity_0 -0.03324664410484694 -0.0010568778256228267 -1.3708768866478524e-06
+  hidden angularVelocity_0 0.021163004456997526 1.3366514747323173 -0.04104843833437534
+  translation 0.921167767232035 -0.530291533931127 0.44987165521468603
+  rotation 0.7654100214691374 -0.5184091025556967 0.38131286553434274 -1.982274239839434
+  name "apple(14)"
+}
+Apple {
+  hidden linearVelocity_0 -0.0391199357700422 -0.011075992816847876 3.1166937722889263e-06
+  hidden angularVelocity_0 0.2217866053748503 1.2190503768326448 -0.19724914740264354
+  translation 0.8332607599593274 -1.1265293902408702 0.44986902888833025
+  rotation 0.6546774847566917 -0.7534290155154333 0.06117278424345973 1.938085098760011
+  name "apple(8)"
+}
+Apple {
+  hidden linearVelocity_0 -0.0162732901939255 -0.0102242145648453 -6.196173637002921e-07
+  hidden angularVelocity_0 0.2047210803877786 1.6765182687495284 0.20008294426451173
+  translation 1.8332461031721978 -0.6941554777357474 0.44989795962914414
+  rotation -0.5975469905829183 -0.20710678747669525 -0.7746253111191118 2.848714952497719
+  name "apple(12)"
+}
+Apple {
+  hidden linearVelocity_0 0.020262919949244448 -0.0024023158706792864 4.0197052864485375e-08
+  hidden angularVelocity_0 0.04810957759115527 2.408102931599845 -0.27846221735502863
+  translation 0.6131484299736291 -0.9904229028477061 0.4498628233326965
+  rotation -0.8911932064584424 -0.3268707827211652 -0.3145316520885826 -2.499065648399094
+  name "apple(13)"
+}
+Apple {
+  hidden linearVelocity_0 0.0004298193170363202 0.011764085737056649 -5.740457139573435e-07
+  hidden angularVelocity_0 -0.23556247565177588 2.010973491585495 0.060128355951190975
+  translation 0.4737249941338194 -0.9737430659802565 0.44985880320547533
+  rotation -0.9413537089753409 -0.33580343730318996 -0.0330037284822818 2.795357008506968
+  name "apple(5)"
+}
+Apple {
+  hidden linearVelocity_0 5.564266414594131e-05 -0.0024958860373611347 -5.626621715666011e-07
+  hidden angularVelocity_0 0.04997607422354375 2.0034818970066057 -0.04357338839016353
+  translation 0.47089939983223744 -0.6541813548445208 0.44985869006141616
+  rotation 0.9544456278390713 -0.263740906192 -0.1395502701534595 -2.022932801708702
+  name "apple(11)"
+}
+Apple {
+  hidden linearVelocity_0 -0.05355827235891449 0.006467066552545948 -1.9921276518040198e-06
+  hidden angularVelocity_0 -0.12949609112804056 0.9299390840353231 0.0575649210157913
+  translation 0.9155707580819439 -0.9659463606165627 0.4498715372707885
+  rotation 0.20920068268945816 -0.9718310454113889 -0.10853337522104334 -1.1293860050659275
+  name "apple(9)"
+}
+Apple {
+  hidden linearVelocity_0 0.003145140604745254 -0.01796918922837787 -4.738419746027138e-07
+  hidden angularVelocity_0 0.359811855916581 2.0653435522437023 -0.20829950561985952
+  translation 0.5693412644121225 -1.11621194515307 0.44986157322200293
+  rotation -0.1568004917441667 0.9332679923294637 0.3231477375475803 2.168861227748811
+  name "apple(16)"
+}
+Apple {
+  hidden linearVelocity_0 -0.010190269098320296 0.005478493430812795 -1.5150566504888932e-10
+  hidden angularVelocity_0 -0.10968446652096288 1.7983212730904448 -0.3219216936321334
+  translation 3.3707267815165047 -1.0061665751495497 0.44994230400205587
+  rotation -0.14605339995019226 -0.29794513037627024 -0.9433435766718595 -2.9052002929770873
+  name "apple(17)"
+}
+Apple {
+  hidden linearVelocity_0 -0.033050781344143826 -4.197549839998526e-06 -1.1886725082942774e-06
+  hidden angularVelocity_0 9.733981046742563e-05 1.340573188315836 -0.43277866207635424
+  translation 1.528338695842214 -0.5776671854413316 0.4498891599934721
+  rotation -0.27696035219386494 0.9590711395188264 -0.058953478732898905 2.525982428537106
+  name "apple(18)"
+}
+Apple {
+  hidden linearVelocity_0 -0.0015034740058655245 -0.005426475683861239 -5.856074034576457e-07
+  hidden angularVelocity_0 0.10866222473079717 1.9722624666437574 -0.21837879416391628
+  translation 0.5705713927239305 -0.791312062203495 0.44986157639015817
+  rotation -0.9544047084647592 0.29659477737397894 0.033811100171063486 -2.3277295829057336
+  name "apple(19)"
+}
+Apple {
+  hidden linearVelocity_0 -5.093173676520765e-09 -0.0024954307019780606 -5.697522300169728e-07
+  hidden angularVelocity_0 0.049967139013295685 2.0023674512171485 -0.049908617530721795
+  translation 0.4700001977147338 -0.7541773104976084 0.449858672249135
+  rotation 0.7361837703891302 0.5260833819148372 -0.425757831975751 3.037236416023215
+  name "apple(20)"
+}
+Apple {
+  hidden linearVelocity_0 -3.298507380227125e-07 -0.00033178639500358955 -1.3495547942132718e-07
+  hidden angularVelocity_0 0.006644073000327074 -7.3447487940444565e-06 0.006635096881952902
+  translation 0.00951052648211243 -0.9745801867605028 0.4482455796203264
+  rotation 0.35903179514002836 0.8903954742160131 -0.27980720071894144 0.5317911938706888
+  name "apple(1)"
+}
+Apple {
+  hidden linearVelocity_0 4.328034929312792e-06 -6.147581855779289e-06 -1.0009886501904931e-08
+  hidden angularVelocity_0 0.00012310567931173488 8.661012485152048e-05 -4.623445997863746e-12
+  translation -0.0908206970990467 -0.9745973865316756 0.4482533355405423
+  rotation 0.5683836908462572 -0.25912744576425945 -0.7808924041323986 2.18061492665647
+  name "apple(2)"
+}
+Apple {
+  hidden linearVelocity_0 0.0007003032160123018 0.0006263133597096923 -2.4119030339279287e-08
+  hidden angularVelocity_0 -0.012541826788403921 0.014023662558172941 -0.010422589339208163
+  translation -0.04390849203791916 -0.8856496865279174 0.44825947282449286
+  rotation 0.9734178351625463 -0.2277456120055015 0.024282800491323947 2.2437920279271726
+  name "apple(4)"
+}
+Apple {
+  hidden linearVelocity_0 4.3280466695787654e-06 -6.1475841229823075e-06 6.654050159464002e-08
+  hidden angularVelocity_0 0.0001231059854873386 8.660983373842523e-05 -4.679044313777084e-12
+  translation -0.16511648561927494 -0.9039310418626838 0.44826683026597675
+  rotation -0.09656302665479975 -0.9693705592243592 0.2258236054807327 -1.0543777192801
+  name "apple(3)"
+}
+DEF WORKER Pedestrian {
+  translation -2.3 1.1 1.27
+  name "factory worker"
+  controllerArgs [
+    "--trajectory=-2.3 1.1, 3.9 1.1, 3.9 -1.95, -2.3 -1.95"
+    "--speed=0.45"
+  ]
+  shirtColor 1 0.45 0
+  pantsColor 0.15 0.15 0.2
+}

@@ -1,0 +1,178 @@
+{
+  "recorded_at": 1787897762.1043108,
+  "job_id": "c00d47c048fb4aec9f148c347263ec30",
+  "source_video": "40b845ca6e1e44df91b1ed7695dd9362_01_jcb_4cx_boom_cylinder.mp4",
+  "run_wall_clock_sec": 20.45,
+  "config": {
+    "vision_provider": "ollama",
+    "vision_model": "moondream",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "rag_similarity_threshold": 0.7,
+    "ocr_confidence_threshold": 0.8,
+    "blur_variance_threshold": 100.0,
+    "max_structured_output_retries": 3,
+    "keyframe_sample_interval_sec": 1.0,
+    "max_keyframes": 24
+  },
+  "model_info": {
+    "vision_model": {
+      "model": "moondream",
+      "parameter_size": "1B",
+      "quantization_level": "Q4_0",
+      "family": "phi2",
+      "format": "gguf"
+    },
+    "embedding_model": {
+      "model": "all-MiniLM-L6-v2",
+      "parameter_count": 22713216,
+      "embedding_dim": 384
+    }
+  },
+  "agent_timeline": [
+    {
+      "node": "perception",
+      "entered_at_rel_ms": 20448.0,
+      "duration_ms": 20448.0,
+      "status_after": "RUNNING_RAG"
+    },
+    {
+      "node": "rag",
+      "entered_at_rel_ms": 20450.0,
+      "duration_ms": 2.0,
+      "status_after": "FAILED"
+    }
+  ],
+  "vision_calls": [
+    {
+      "node": "perception",
+      "wall_time": 1787897669.1310995,
+      "call": "analyze_frame",
+      "frame_index": 0,
+      "model": "moondream",
+      "prompt_eval_count": 949,
+      "eval_count": 64,
+      "prompt_eval_duration_ms": 473.412,
+      "eval_duration_ms": 464.96,
+      "load_duration_ms": 8628.2707,
+      "total_duration_ms": 9598.8098,
+      "image_bytes": 64408
+    },
+    {
+      "node": "perception",
+      "wall_time": 1787897672.222895,
+      "call": "analyze_frame",
+      "frame_index": 1,
+      "model": "moondream",
+      "prompt_eval_count": null,
+      "eval_count": null,
+      "prompt_eval_duration_ms": 0.0,
+      "eval_duration_ms": 0.0,
+      "load_duration_ms": 0.0,
+      "total_duration_ms": 0.0,
+      "image_bytes": 158420
+    },
+    {
+      "node": "perception",
+      "wall_time": 1787897675.2918901,
+      "call": "analyze_frame",
+      "frame_index": 2,
+      "model": "moondream",
+      "prompt_eval_count": 949,
+      "eval_count": 57,
+      "prompt_eval_duration_ms": 352.891,
+      "eval_duration_ms": 519.126,
+      "load_duration_ms": 5.3231,
+      "total_duration_ms": 1004.2755,
+      "image_bytes": 159568
+    }
+  ],
+  "token_usage": {
+    "total_prompt_tokens": 1898,
+    "total_completion_tokens": 121,
+    "total_tokens": 2019,
+    "call_count": 3
+  },
+  "memory_footprint": {
+    "agent_state_bytes": 1832,
+    "checkpoint_log_count": 1,
+    "chat_history_count": 1,
+    "retry_counts": {},
+    "human_answers_count": 0
+  },
+  "final_state": {
+    "job_id": "c00d47c048fb4aec9f148c347263ec30",
+    "video_path": "C:\\Users\\Azlaan\\Projects\\CatCam-JavaHack\\JavaHack\\uploads\\40b845ca6e1e44df91b1ed7695dd9362_01_jcb_4cx_boom_cylinder.mp4",
+    "image_path": null,
+    "user_query": "",
+    "status": "FAILED",
+    "current_node": "rag",
+    "perception": {
+      "frame_reports": [
+        {
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "laplacian_variance": 874.6403144244535,
+          "brightness_mean": 143.2658699845679,
+          "width": 960,
+          "height": 540,
+          "passed": true,
+          "reason": null
+        },
+        {
+          "frame_index": 1,
+          "timestamp_sec": 1.0,
+          "laplacian_variance": 1131.9260724640478,
+          "brightness_mean": 143.19931712962963,
+          "width": 960,
+          "height": 540,
+          "passed": true,
+          "reason": null
+        },
+        {
+          "frame_index": 2,
+          "timestamp_sec": 2.0,
+          "laplacian_variance": 1141.3862864594907,
+          "brightness_mean": 143.20304398148147,
+          "width": 960,
+          "height": 540,
+          "passed": true,
+          "reason": null
+        }
+      ],
+      "detected_entities": [],
+      "machine_brand": null,
+      "machine_model": null,
+      "serial_number": null,
+      "serial_confidence": 0.0,
+      "damaged_components": [],
+      "uncertain_fields": [],
+      "usable_frame_count": 3,
+      "discarded_frame_count": 0
+    },
+    "part_identification": null,
+    "visual_search": null,
+    "rag_result": null,
+    "compatibility": null,
+    "clarification_questions": [],
+    "human_answers": {},
+    "recommendations": [],
+    "chat_history": [
+      {
+        "role": "assistant",
+        "content": "Perception complete: identified unknown brand  (serial unresolved, confidence 0.00). Damaged/worn components observed: none. 3 usable frames, 0 discarded for quality.",
+        "timestamp": 1787897675.2924228
+      }
+    ],
+    "checkpoint_logs": [
+      {
+        "checkpoint": "frame_quality",
+        "node": "perception",
+        "passed": true,
+        "detail": "3/3 sampled frames passed quality gate (blur/brightness/resolution); 0 auto-discarded.",
+        "timestamp": 1787897655.3561118
+      }
+    ],
+    "retry_counts": {},
+    "error": "No query available for RAG search (perception yielded nothing usable)."
+  }
+}

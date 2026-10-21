@@ -1,0 +1,273 @@
+[
+  {
+    "part_id": "JCB-3CX-HYDCYL-045",
+    "name": "Boom Hydraulic Cylinder",
+    "brand": "JCB",
+    "compatible_models": ["3CX", "3CX Compact", "4CX"],
+    "serial_range": {"min": "JCB3CX0001", "max": "JCB3CX9999"},
+    "category": "Hydraulic Cylinder",
+    "specs": {
+      "rod_diameter_mm": 45,
+      "bore_diameter_mm": 80,
+      "stroke_length_mm": 900,
+      "max_pressure_bar": 210,
+      "duty": "standard"
+    },
+    "dimensions_mm": {"length_retracted": 1450, "length_extended": 2350, "weight_kg": 38},
+    "exploded_diagram_ref": "diagrams/jcb_3cx_boom_cyl_045.svg",
+    "price_usd": 1240.0,
+    "description": "OEM-spec boom lift hydraulic cylinder for JCB 3CX/4CX backhoe loaders, standard-duty seal kit, chrome-plated rod."
+  },
+  {
+    "part_id": "JCB-3CX-HYDCYL-050HD",
+    "name": "Boom Hydraulic Cylinder (Heavy Duty)",
+    "brand": "JCB",
+    "compatible_models": ["3CX", "4CX", "4CX Super"],
+    "serial_range": {"min": "JCB4CX0001", "max": "JCB4CX9999"},
+    "category": "Hydraulic Cylinder",
+    "specs": {
+      "rod_diameter_mm": 50,
+      "bore_diameter_mm": 85,
+      "stroke_length_mm": 900,
+      "max_pressure_bar": 250,
+      "duty": "heavy"
+    },
+    "dimensions_mm": {"length_retracted": 1460, "length_extended": 2360, "weight_kg": 44},
+    "exploded_diagram_ref": "diagrams/jcb_4cx_boom_cyl_050hd.svg",
+    "price_usd": 1560.0,
+    "description": "Heavy-duty reinforced boom cylinder for extended-reach and quarry-spec JCB backhoe loaders, hardened rod, Viton seal kit."
+  },
+  {
+    "part_id": "CAT-320-SEALKIT-STD",
+    "name": "Hydraulic Cylinder Seal Kit (Standard)",
+    "brand": "Caterpillar",
+    "compatible_models": ["320", "320D", "320D2"],
+    "serial_range": {"min": "CAT3200001", "max": "CAT3209999"},
+    "category": "Seal Kit",
+    "specs": {
+      "rod_diameter_mm": 90,
+      "bore_diameter_mm": 130,
+      "seal_material": "Nitrile (NBR)",
+      "duty": "standard"
+    },
+    "dimensions_mm": {"weight_kg": 1.2},
+    "exploded_diagram_ref": "diagrams/cat_320_sealkit_std.svg",
+    "price_usd": 145.0,
+    "description": "Standard-duty NBR seal kit for CAT 320 series arm/bucket cylinders, includes wipers, rod seals, piston seals, O-rings."
+  },
+  {
+    "part_id": "CAT-320-SEALKIT-HD",
+    "name": "Hydraulic Cylinder Seal Kit (Heavy Duty, High-Temp)",
+    "brand": "Caterpillar",
+    "compatible_models": ["320D2", "323", "323D"],
+    "serial_range": {"min": "CAT3230001", "max": "CAT3239999"},
+    "category": "Seal Kit",
+    "specs": {
+      "rod_diameter_mm": 90,
+      "bore_diameter_mm": 130,
+      "seal_material": "Viton (FKM)",
+      "duty": "heavy"
+    },
+    "dimensions_mm": {"weight_kg": 1.3},
+    "exploded_diagram_ref": "diagrams/cat_320_sealkit_hd.svg",
+    "price_usd": 210.0,
+    "description": "Heavy-duty Viton seal kit rated for high-temperature/high-cycle excavator operation, CAT 320D2/323 arm and bucket cylinders."
+  },
+  {
+    "part_id": "CAT-330-BOOMCYL",
+    "name": "Excavator Boom Cylinder",
+    "brand": "Caterpillar",
+    "compatible_models": ["330", "330D", "330GC"],
+    "serial_range": {"min": "CAT3300001", "max": "CAT3309999"},
+    "category": "Hydraulic Cylinder",
+    "specs": {
+      "rod_diameter_mm": 110,
+      "bore_diameter_mm": 160,
+      "stroke_length_mm": 1680,
+      "max_pressure_bar": 350,
+      "duty": "heavy"
+    },
+    "dimensions_mm": {"length_retracted": 2600, "length_extended": 4280, "weight_kg": 210},
+    "exploded_diagram_ref": "diagrams/cat_330_boom_cyl.svg",
+    "price_usd": 4850.0,
+    "description": "OEM boom cylinder for CAT 330 series excavators, hard-chrome rod, tandem seal design for high-pressure boom circuits."
+  },
+  {
+    "part_id": "PARK-PVP-PUMP-023",
+    "name": "Variable Displacement Piston Pump",
+    "brand": "Parker",
+    "compatible_models": ["JCB 3CX", "JCB 4CX", "CASE 580"],
+    "serial_range": {"min": "PVP230001", "max": "PVP239999"},
+    "category": "Hydraulic Pump",
+    "specs": {
+      "displacement_cc_rev": 23,
+      "max_pressure_bar": 250,
+      "max_speed_rpm": 3000,
+      "shaft_type": "splined SAE B"
+    },
+    "dimensions_mm": {"length": 310, "width": 180, "height": 190, "weight_kg": 22},
+    "exploded_diagram_ref": "diagrams/parker_pvp_pump_023.svg",
+    "price_usd": 2100.0,
+    "description": "Variable displacement axial piston pump used as main hydraulic pump on JCB 3CX/4CX backhoe loaders and compatible CASE models."
+  },
+  {
+    "part_id": "DON-HYDFILT-P550",
+    "name": "Hydraulic Return Filter Element",
+    "brand": "Donaldson",
+    "compatible_models": ["JCB 3CX", "JCB 4CX", "CAT 320", "CAT 330"],
+    "serial_range": {"min": "N/A", "max": "N/A"},
+    "category": "Filter",
+    "specs": {
+      "micron_rating": 10,
+      "filter_type": "return line spin-on",
+      "thread": "1-1/2\" - 12 UN"
+    },
+    "dimensions_mm": {"length": 245, "diameter": 95, "weight_kg": 1.1},
+    "exploded_diagram_ref": "diagrams/donaldson_p550_filter.svg",
+    "price_usd": 38.0,
+    "description": "Universal 10-micron hydraulic return line filter element, cross-compatible across JCB and CAT hydraulic circuits."
+  },
+  {
+    "part_id": "JCB-3CX-DIPPERCYL",
+    "name": "Dipper (Arm) Hydraulic Cylinder",
+    "brand": "JCB",
+    "compatible_models": ["3CX", "3CX Compact"],
+    "serial_range": {"min": "JCB3CX0001", "max": "JCB3CX9999"},
+    "category": "Hydraulic Cylinder",
+    "specs": {
+      "rod_diameter_mm": 60,
+      "bore_diameter_mm": 100,
+      "stroke_length_mm": 1120,
+      "max_pressure_bar": 210,
+      "duty": "standard"
+    },
+    "dimensions_mm": {"length_retracted": 1680, "length_extended": 2800, "weight_kg": 52},
+    "exploded_diagram_ref": "diagrams/jcb_3cx_dipper_cyl.svg",
+    "price_usd": 1480.0,
+    "description": "Dipper/arm cylinder for JCB 3CX backhoe loader, standard-duty configuration with grease nipple pin bosses."
+  },
+  {
+    "part_id": "CASE-580-BRAKEKIT",
+    "name": "Wet Disc Brake Repair Kit",
+    "brand": "CASE",
+    "compatible_models": ["580 Super N", "580 SuperM"],
+    "serial_range": {"min": "CASE5800001", "max": "CASE5809999"},
+    "category": "Brake Kit",
+    "specs": {
+      "disc_count": 6,
+      "friction_material": "sintered bronze",
+      "axle_position": "rear"
+    },
+    "dimensions_mm": {"weight_kg": 4.5},
+    "exploded_diagram_ref": "diagrams/case_580_brake_kit.svg",
+    "price_usd": 320.0,
+    "description": "Complete wet disc brake rebuild kit for CASE 580 Super N/M rear axle, includes discs, plates, and seal set."
+  },
+  {
+    "part_id": "JCB-SERIALTAG-BRACKET",
+    "name": "Serial/ID Plate Mounting Bracket",
+    "brand": "JCB",
+    "compatible_models": ["3CX", "4CX", "3CX Compact"],
+    "serial_range": {"min": "N/A", "max": "N/A"},
+    "category": "Chassis Hardware",
+    "specs": {
+      "material": "stamped steel 2mm",
+      "mount": "riveted"
+    },
+    "dimensions_mm": {"length": 150, "width": 90, "weight_kg": 0.3},
+    "exploded_diagram_ref": "diagrams/jcb_serial_bracket.svg",
+    "price_usd": 14.5,
+    "description": "Replacement mounting bracket for the machine identification/serial plate, common failure point after frame corrosion."
+  },
+  {
+    "part_id": "CAT-320-TRACKPAD",
+    "name": "Rubber Track Pad Set",
+    "brand": "Caterpillar",
+    "compatible_models": ["320", "320D"],
+    "serial_range": {"min": "CAT3200001", "max": "CAT3209999"},
+    "category": "Undercarriage",
+    "specs": {
+      "pad_width_mm": 600,
+      "bolt_pattern": "3-bolt",
+      "material": "vulcanized rubber"
+    },
+    "dimensions_mm": {"weight_kg": 3.8},
+    "exploded_diagram_ref": "diagrams/cat_320_trackpad.svg",
+    "price_usd": 62.0,
+    "description": "Bolt-on rubber track pad for CAT 320/320D undercarriage, sold per pad, 600mm width for standard ground-pressure config."
+  },
+  {
+    "part_id": "PARK-PVP-PUMP-016",
+    "name": "Variable Displacement Piston Pump (Compact)",
+    "brand": "Parker",
+    "compatible_models": ["JCB 3CX Compact"],
+    "serial_range": {"min": "PVP160001", "max": "PVP169999"},
+    "category": "Hydraulic Pump",
+    "specs": {
+      "displacement_cc_rev": 16,
+      "max_pressure_bar": 230,
+      "max_speed_rpm": 3200,
+      "shaft_type": "splined SAE A"
+    },
+    "dimensions_mm": {"length": 265, "width": 160, "height": 170, "weight_kg": 16},
+    "exploded_diagram_ref": "diagrams/parker_pvp_pump_016.svg",
+    "price_usd": 1750.0,
+    "description": "Compact-displacement piston pump for JCB 3CX Compact backhoe loaders, smaller SAE A shaft interface."
+  },
+  {
+    "part_id": "EPS-T6-602S-J4SERVO",
+    "name": "J4 Axis AC Servo Motor",
+    "brand": "Epson",
+    "compatible_models": ["T6-602S", "T6-B602S"],
+    "serial_range": {"min": "EPST6000001", "max": "EPST6009999"},
+    "category": "Servo Motor",
+    "specs": {
+      "axis": "J4 (Z-rotation)",
+      "rated_torque_nm": 1.27,
+      "max_speed_rpm": 6000,
+      "encoder_type": "23-bit absolute",
+      "duty": "standard"
+    },
+    "dimensions_mm": {"length": 118, "diameter": 60, "weight_kg": 1.4},
+    "exploded_diagram_ref": "diagrams/epson_t6_j4_servo.svg",
+    "price_usd": 2380.0,
+    "description": "OEM replacement AC servo motor with integrated absolute encoder for the J4 (end-effector rotation) axis of the Epson T6-602S/T6-B602S SCARA, matched to the integrated RC+ controller."
+  },
+  {
+    "part_id": "EPS-T6-602S-J2HARMONIC",
+    "name": "J2 Harmonic Drive Gearbox",
+    "brand": "Epson",
+    "compatible_models": ["T6-602S", "T6-B602S"],
+    "serial_range": {"min": "EPST6000001", "max": "EPST6009999"},
+    "category": "Gearbox",
+    "specs": {
+      "axis": "J2 (elbow rotary)",
+      "reduction_ratio": "100:1",
+      "rated_torque_nm": 39,
+      "repeatability_arcmin": 1.0,
+      "duty": "heavy"
+    },
+    "dimensions_mm": {"diameter": 90, "length": 55, "weight_kg": 2.1},
+    "exploded_diagram_ref": "diagrams/epson_t6_j2_harmonic.svg",
+    "price_usd": 3150.0,
+    "description": "Precision harmonic-drive speed reducer for the J2 elbow joint of the Epson T6-602S SCARA, the component responsible for maintaining the arm's rated ±0.04mm repeatability under pick-and-place load."
+  },
+  {
+    "part_id": "EPS-T6-602S-BELTKIT",
+    "name": "J1/J2 Timing Belt Kit",
+    "brand": "Epson",
+    "compatible_models": ["T6-602S", "T6-B602S", "T6-602C"],
+    "serial_range": {"min": "EPST6000001", "max": "EPST6009999"},
+    "category": "Belt Kit",
+    "specs": {
+      "belt_type": "carbon-fiber reinforced timing belt",
+      "pitch_mm": 5,
+      "width_mm": 15,
+      "duty": "standard"
+    },
+    "dimensions_mm": {"weight_kg": 0.3},
+    "exploded_diagram_ref": "diagrams/epson_t6_belt_kit.svg",
+    "price_usd": 285.0,
+    "description": "Replacement J1/J2 drive timing belt set for the Epson T6-602S SCARA arm, standard scheduled-maintenance wear item on high-cycle pick-and-place / food industry sorting lines."
+  }
+]

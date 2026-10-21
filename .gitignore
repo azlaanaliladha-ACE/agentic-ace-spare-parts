@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+*.pt
+backend/uploads/*
+backend/vector_store/*
+!backend/uploads/.gitkeep
+!backend/vector_store/.gitkeep
+backend/data/mvid_raw/
+webots_sim/demo_capture/

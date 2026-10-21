@@ -1,0 +1,712 @@
+{
+  "recorded_at": 1787898069.3014848,
+  "job_id": "64ef06a6612f47adbd06736804e7fac3",
+  "source_video": "40b845ca6e1e44df91b1ed7695dd9362_01_jcb_4cx_boom_cylinder.mp4",
+  "run_wall_clock_sec": 85.22,
+  "config": {
+    "vision_provider": "mock",
+    "vision_model": "moondream",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "rag_similarity_threshold": 0.7,
+    "ocr_confidence_threshold": 0.8,
+    "blur_variance_threshold": 100.0,
+    "max_structured_output_retries": 3,
+    "keyframe_sample_interval_sec": 1.0,
+    "max_keyframes": 24
+  },
+  "model_info": {
+    "vision_model": {
+      "model": "moondream",
+      "parameter_size": "1B",
+      "quantization_level": "Q4_0",
+      "family": "phi2",
+      "format": "gguf"
+    },
+    "embedding_model": {
+      "model": "all-MiniLM-L6-v2",
+      "parameter_count": 22713216,
+      "embedding_dim": 384
+    }
+  },
+  "agent_timeline": [
+    {
+      "round": 0,
+      "node": null,
+      "entered_at_rel_ms": 35.2,
+      "duration_ms": 35.2,
+      "status_after": "PENDING"
+    },
+    {
+      "round": 0,
+      "node": "perception",
+      "entered_at_rel_ms": 402.2,
+      "duration_ms": 367.0,
+      "status_after": "RUNNING_RAG"
+    },
+    {
+      "round": 0,
+      "node": "rag",
+      "entered_at_rel_ms": 85166.0,
+      "duration_ms": 84763.8,
+      "status_after": "RUNNING_RAG"
+    },
+    {
+      "round": 0,
+      "node": "clarification",
+      "entered_at_rel_ms": 85166.0,
+      "duration_ms": 0.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 1,
+      "node": "clarification",
+      "entered_at_rel_ms": 85168.0,
+      "duration_ms": 2.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 1,
+      "node": "perception",
+      "entered_at_rel_ms": 85170.0,
+      "duration_ms": 2.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 1,
+      "node": "rag",
+      "entered_at_rel_ms": 85211.0,
+      "duration_ms": 41.0,
+      "status_after": "RUNNING_COMPATIBILITY"
+    },
+    {
+      "round": 1,
+      "node": "compatibility",
+      "entered_at_rel_ms": 85211.0,
+      "duration_ms": 0.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 1,
+      "node": "clarification",
+      "entered_at_rel_ms": 85216.0,
+      "duration_ms": 5.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 2,
+      "node": "clarification",
+      "entered_at_rel_ms": 85218.0,
+      "duration_ms": 2.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 2,
+      "node": "perception",
+      "entered_at_rel_ms": 85218.0,
+      "duration_ms": 0.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 2,
+      "node": "rag",
+      "entered_at_rel_ms": 85218.0,
+      "duration_ms": 0.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 2,
+      "node": "compatibility",
+      "entered_at_rel_ms": 85220.0,
+      "duration_ms": 2.0,
+      "status_after": "AWAITING_HUMAN_CLARIFICATION"
+    },
+    {
+      "round": 2,
+      "node": "clarification",
+      "entered_at_rel_ms": 85220.0,
+      "duration_ms": 0.0,
+      "status_after": "GENERATING_RECOMMENDATION"
+    },
+    {
+      "round": 2,
+      "node": "perception",
+      "entered_at_rel_ms": 85220.0,
+      "duration_ms": 0.0,
+      "status_after": "GENERATING_RECOMMENDATION"
+    },
+    {
+      "round": 2,
+      "node": "rag",
+      "entered_at_rel_ms": 85220.0,
+      "duration_ms": 0.0,
+      "status_after": "GENERATING_RECOMMENDATION"
+    },
+    {
+      "round": 2,
+      "node": "compatibility",
+      "entered_at_rel_ms": 85222.0,
+      "duration_ms": 2.0,
+      "status_after": "GENERATING_RECOMMENDATION"
+    },
+    {
+      "round": 2,
+      "node": "finalize",
+      "entered_at_rel_ms": 85222.0,
+      "duration_ms": 0.0,
+      "status_after": "COMPLETED"
+    }
+  ],
+  "vision_calls": [],
+  "token_usage": {
+    "total_prompt_tokens": 0,
+    "total_completion_tokens": 0,
+    "total_tokens": 0,
+    "call_count": 0
+  },
+  "memory_footprint": {
+    "agent_state_bytes": 12029,
+    "checkpoint_log_count": 9,
+    "chat_history_count": 9,
+    "retry_counts": {},
+    "human_answers_count": 0
+  },
+  "final_state": {
+    "job_id": "64ef06a6612f47adbd06736804e7fac3",
+    "video_path": "uploads\\40b845ca6e1e44df91b1ed7695dd9362_01_jcb_4cx_boom_cylinder.mp4",
+    "image_path": null,
+    "user_query": "CASE 580 SuperM bucket pin bushing hydraulic hose",
+    "status": "COMPLETED",
+    "current_node": "finalize",
+    "perception": {
+      "frame_reports": [
+        {
+          "frame_index": 0,
+          "timestamp_sec": 0.0,
+          "laplacian_variance": 874.6403144244535,
+          "brightness_mean": 143.2658699845679,
+          "width": 960,
+          "height": 540,
+          "passed": true,
+          "reason": null
+        },
+        {
+          "frame_index": 1,
+          "timestamp_sec": 1.0,
+          "laplacian_variance": 1131.9260724640478,
+          "brightness_mean": 143.19931712962963,
+          "width": 960,
+          "height": 540,
+          "passed": true,
+          "reason": null
+        },
+        {
+          "frame_index": 2,
+          "timestamp_sec": 2.0,
+          "laplacian_variance": 1141.3862864594907,
+          "brightness_mean": 143.20304398148147,
+          "width": 960,
+          "height": 540,
+          "passed": true,
+          "reason": null
+        }
+      ],
+      "detected_entities": [
+        {
+          "entity_type": "machine",
+          "label": "CASE 580 SuperM",
+          "bbox": {
+            "x_min": 0.1,
+            "y_min": 0.15,
+            "x_max": 0.95,
+            "y_max": 0.9
+          },
+          "confidence": 0.966,
+          "frame_index": 0,
+          "raw_text": null
+        },
+        {
+          "entity_type": "brand_plate",
+          "label": "CASE brand plate",
+          "bbox": {
+            "x_min": 0.55,
+            "y_min": 0.6,
+            "x_max": 0.75,
+            "y_max": 0.68
+          },
+          "confidence": 0.859,
+          "frame_index": 0,
+          "raw_text": "CASE"
+        },
+        {
+          "entity_type": "serial_tag",
+          "label": "serial/ID tag",
+          "bbox": {
+            "x_min": 0.58,
+            "y_min": 0.69,
+            "x_max": 0.78,
+            "y_max": 0.74
+          },
+          "confidence": 0.878,
+          "frame_index": 0,
+          "raw_text": "CASE1788"
+        },
+        {
+          "entity_type": "damaged_component",
+          "label": "bucket pin bushing",
+          "bbox": {
+            "x_min": 0.3,
+            "y_min": 0.4,
+            "x_max": 0.5,
+            "y_max": 0.55
+          },
+          "confidence": 0.738,
+          "frame_index": 0,
+          "raw_text": null
+        },
+        {
+          "entity_type": "machine",
+          "label": "JCB 4CX",
+          "bbox": {
+            "x_min": 0.1,
+            "y_min": 0.15,
+            "x_max": 0.95,
+            "y_max": 0.9
+          },
+          "confidence": 0.853,
+          "frame_index": 1,
+          "raw_text": null
+        },
+        {
+          "entity_type": "brand_plate",
+          "label": "JCB brand plate",
+          "bbox": {
+            "x_min": 0.55,
+            "y_min": 0.6,
+            "x_max": 0.75,
+            "y_max": 0.68
+          },
+          "confidence": 0.926,
+          "frame_index": 1,
+          "raw_text": "JCB"
+        },
+        {
+          "entity_type": "serial_tag",
+          "label": "serial/ID tag (rescanned)",
+          "bbox": {
+            "x_min": 0.58,
+            "y_min": 0.69,
+            "x_max": 0.78,
+            "y_max": 0.74
+          },
+          "confidence": 0.843,
+          "frame_index": 1,
+          "raw_text": "CASE6427"
+        },
+        {
+          "entity_type": "machine",
+          "label": "CASE 580 SuperM",
+          "bbox": {
+            "x_min": 0.1,
+            "y_min": 0.15,
+            "x_max": 0.95,
+            "y_max": 0.9
+          },
+          "confidence": 0.959,
+          "frame_index": 2,
+          "raw_text": null
+        },
+        {
+          "entity_type": "brand_plate",
+          "label": "CASE brand plate",
+          "bbox": {
+            "x_min": 0.55,
+            "y_min": 0.6,
+            "x_max": 0.75,
+            "y_max": 0.68
+          },
+          "confidence": 0.916,
+          "frame_index": 2,
+          "raw_text": "CASE"
+        },
+        {
+          "entity_type": "serial_tag",
+          "label": "serial/ID tag (rescanned)",
+          "bbox": {
+            "x_min": 0.58,
+            "y_min": 0.69,
+            "x_max": 0.78,
+            "y_max": 0.74
+          },
+          "confidence": 0.843,
+          "frame_index": 2,
+          "raw_text": "CASE6427"
+        },
+        {
+          "entity_type": "damaged_component",
+          "label": "hydraulic hose",
+          "bbox": {
+            "x_min": 0.3,
+            "y_min": 0.4,
+            "x_max": 0.5,
+            "y_max": 0.55
+          },
+          "confidence": 0.792,
+          "frame_index": 2,
+          "raw_text": null
+        }
+      ],
+      "machine_brand": "CASE",
+      "machine_model": "580 SuperM",
+      "serial_number": "CASE1788",
+      "serial_confidence": 0.878,
+      "damaged_components": [
+        "bucket pin bushing",
+        "hydraulic hose"
+      ],
+      "uncertain_fields": [],
+      "usable_frame_count": 3,
+      "discarded_frame_count": 0
+    },
+    "part_identification": null,
+    "visual_search": null,
+    "rag_result": {
+      "query": "hydraulic boom cylinder seal kit for JCB 4CX backhoe loader",
+      "matches": [
+        {
+          "part_id": "JCB-3CX-HYDCYL-050HD",
+          "name": "Boom Hydraulic Cylinder (Heavy Duty)",
+          "brand": "JCB",
+          "category": "Hydraulic Cylinder",
+          "score": 0.7353,
+          "metadata": {
+            "compatible_models": [
+              "3CX",
+              "4CX",
+              "4CX Super"
+            ],
+            "specs": {
+              "rod_diameter_mm": 50,
+              "bore_diameter_mm": 85,
+              "stroke_length_mm": 900,
+              "max_pressure_bar": 250,
+              "duty": "heavy"
+            },
+            "serial_range": {
+              "min": "JCB4CX0001",
+              "max": "JCB4CX9999"
+            },
+            "price_usd": 1560.0,
+            "exploded_diagram_ref": "diagrams/jcb_4cx_boom_cyl_050hd.svg"
+          },
+          "match_type": "semantic",
+          "source": "internal_catalogue"
+        },
+        {
+          "part_id": "JCB-3CX-HYDCYL-045",
+          "name": "Boom Hydraulic Cylinder",
+          "brand": "JCB",
+          "category": "Hydraulic Cylinder",
+          "score": 0.7313,
+          "metadata": {
+            "compatible_models": [
+              "3CX",
+              "3CX Compact",
+              "4CX"
+            ],
+            "specs": {
+              "rod_diameter_mm": 45,
+              "bore_diameter_mm": 80,
+              "stroke_length_mm": 900,
+              "max_pressure_bar": 210,
+              "duty": "standard"
+            },
+            "serial_range": {
+              "min": "JCB3CX0001",
+              "max": "JCB3CX9999"
+            },
+            "price_usd": 1240.0,
+            "exploded_diagram_ref": "diagrams/jcb_3cx_boom_cyl_045.svg"
+          },
+          "match_type": "semantic",
+          "source": "internal_catalogue"
+        },
+        {
+          "part_id": "JCB-3CX-DIPPERCYL",
+          "name": "Dipper (Arm) Hydraulic Cylinder",
+          "brand": "JCB",
+          "category": "Hydraulic Cylinder",
+          "score": 0.5961,
+          "metadata": {
+            "compatible_models": [
+              "3CX",
+              "3CX Compact"
+            ],
+            "specs": {
+              "rod_diameter_mm": 60,
+              "bore_diameter_mm": 100,
+              "stroke_length_mm": 1120,
+              "max_pressure_bar": 210,
+              "duty": "standard"
+            },
+            "serial_range": {
+              "min": "JCB3CX0001",
+              "max": "JCB3CX9999"
+            },
+            "price_usd": 1480.0,
+            "exploded_diagram_ref": "diagrams/jcb_3cx_dipper_cyl.svg"
+          },
+          "match_type": "semantic",
+          "source": "internal_catalogue"
+        },
+        {
+          "part_id": "CAT-320-SEALKIT-STD",
+          "name": "Hydraulic Cylinder Seal Kit (Standard)",
+          "brand": "Caterpillar",
+          "category": "Seal Kit",
+          "score": 0.5222,
+          "metadata": {
+            "compatible_models": [
+              "320",
+              "320D",
+              "320D2"
+            ],
+            "specs": {
+              "rod_diameter_mm": 90,
+              "bore_diameter_mm": 130,
+              "seal_material": "Nitrile (NBR)",
+              "duty": "standard"
+            },
+            "serial_range": {
+              "min": "CAT3200001",
+              "max": "CAT3209999"
+            },
+            "price_usd": 145.0,
+            "exploded_diagram_ref": "diagrams/cat_320_sealkit_std.svg"
+          },
+          "match_type": "semantic",
+          "source": "internal_catalogue"
+        },
+        {
+          "part_id": "PARK-PVP-PUMP-023",
+          "name": "Variable Displacement Piston Pump",
+          "brand": "Parker",
+          "category": "Hydraulic Pump",
+          "score": 0.4953,
+          "metadata": {
+            "compatible_models": [
+              "JCB 3CX",
+              "JCB 4CX",
+              "CASE 580"
+            ],
+            "specs": {
+              "displacement_cc_rev": 23,
+              "max_pressure_bar": 250,
+              "max_speed_rpm": 3000,
+              "shaft_type": "splined SAE B"
+            },
+            "serial_range": {
+              "min": "PVP230001",
+              "max": "PVP239999"
+            },
+            "price_usd": 2100.0,
+            "exploded_diagram_ref": "diagrams/parker_pvp_pump_023.svg"
+          },
+          "match_type": "semantic",
+          "source": "internal_catalogue"
+        }
+      ],
+      "top_score": 0.7353,
+      "passed_threshold": true
+    },
+    "compatibility": {
+      "verdicts": [
+        {
+          "part_id": "JCB-3CX-HYDCYL-050HD",
+          "part_name": "Boom Hydraulic Cylinder (Heavy Duty)",
+          "compatible": true,
+          "checks": [
+            {
+              "field": "compatible_models",
+              "required_value": "CASE 580 SuperM",
+              "actual_value": [
+                "3CX",
+                "4CX",
+                "4CX Super"
+              ],
+              "unit": null,
+              "match": false
+            }
+          ],
+          "notes": null
+        },
+        {
+          "part_id": "JCB-3CX-HYDCYL-045",
+          "part_name": "Boom Hydraulic Cylinder",
+          "compatible": false,
+          "checks": [
+            {
+              "field": "compatible_models",
+              "required_value": "CASE 580 SuperM",
+              "actual_value": [
+                "3CX",
+                "3CX Compact",
+                "4CX"
+              ],
+              "unit": null,
+              "match": false
+            }
+          ],
+          "notes": null
+        }
+      ],
+      "has_conflict": false,
+      "conflict_reason": null,
+      "conflicting_part_ids": []
+    },
+    "clarification_questions": [
+      {
+        "id": "136ea5ab",
+        "field": "query",
+        "question": "I couldn't find a confident catalogue match (top similarity 0.46 < 0.70). Can you describe the part more specifically - e.g. exact component name, machine model, or a dimension such as rod/bore diameter?",
+        "options": null,
+        "reason": "low_rag_similarity"
+      },
+      {
+        "id": "e98e48c7",
+        "field": "part_id",
+        "question": "Multiple parts are plausibly compatible: No candidate part could be fully validated against the detected machine/serial.. Which one do you need?",
+        "options": [
+          "Boom Hydraulic Cylinder (Heavy Duty) (JCB-3CX-HYDCYL-050HD)",
+          "Boom Hydraulic Cylinder (JCB-3CX-HYDCYL-045)"
+        ],
+        "reason": "compatibility_conflict"
+      }
+    ],
+    "human_answers": {},
+    "recommendations": [
+      {
+        "part_id": "JCB-3CX-HYDCYL-050HD",
+        "name": "Boom Hydraulic Cylinder (Heavy Duty)",
+        "brand": "JCB",
+        "price_usd": 1560.0,
+        "confidence": 0.6,
+        "rationale": "Boom Hydraulic Cylinder (Heavy Duty) (JCB) matched with catalogue similarity and passed 0/1 compatibility checks.",
+        "exploded_diagram_ref": "diagrams/jcb_4cx_boom_cyl_050hd.svg"
+      }
+    ],
+    "chat_history": [
+      {
+        "role": "assistant",
+        "content": "Perception complete: identified CASE 580 SuperM (serial CASE1788, confidence 0.88). Damaged/worn components observed: bucket pin bushing, hydraulic hose. 3 usable frames, 0 discarded for quality.",
+        "timestamp": 1787897976.5337512
+      },
+      {
+        "role": "assistant",
+        "content": "Catalogue search for 'CASE 580 SuperM bucket pin bushing hydraulic hose' -> top candidates: Wet Disc Brake Repair Kit (0.46), Dipper (Arm) Hydraulic Cylinder (0.43), Boom Hydraulic Cylinder (Heavy Duty) (0.39).",
+        "timestamp": 1787898061.2955232
+      },
+      {
+        "role": "assistant",
+        "content": "I couldn't find a confident catalogue match (top similarity 0.46 < 0.70). Can you describe the part more specifically - e.g. exact component name, machine model, or a dimension such as rod/bore diameter?",
+        "timestamp": 1787898061.297528
+      },
+      {
+        "role": "assistant",
+        "content": "Catalogue search for 'hydraulic boom cylinder seal kit for JCB 4CX backhoe loader' -> top candidates: Boom Hydraulic Cylinder (Heavy Duty) (0.74), Boom Hydraulic Cylinder (0.73), Dipper (Arm) Hydraulic Cylinder (0.60).",
+        "timestamp": 1787898061.3425508
+      },
+      {
+        "role": "assistant",
+        "content": "Compatibility check: 0/2 candidates validated. Conflict: No candidate part could be fully validated against the detected machine/serial.",
+        "timestamp": 1787898061.3425508
+      },
+      {
+        "role": "assistant",
+        "content": "Multiple parts are plausibly compatible: No candidate part could be fully validated against the detected machine/serial.. Which one do you need?",
+        "timestamp": 1787898061.3425508
+      },
+      {
+        "role": "assistant",
+        "content": "Compatibility check: 0/2 candidates validated. Conflict: No candidate part could be fully validated against the detected machine/serial.",
+        "timestamp": 1787898061.3495064
+      },
+      {
+        "role": "user",
+        "content": "Selected part: JCB-3CX-HYDCYL-050HD",
+        "timestamp": 1787898061.3515112
+      },
+      {
+        "role": "assistant",
+        "content": "Final recommendation: Boom Hydraulic Cylinder (Heavy Duty) ($1560.00, confidence 0.60)",
+        "timestamp": 1787898061.3535163
+      }
+    ],
+    "checkpoint_logs": [
+      {
+        "checkpoint": "frame_quality",
+        "node": "perception",
+        "passed": true,
+        "detail": "3/3 sampled frames passed quality gate (blur/brightness/resolution); 0 auto-discarded.",
+        "timestamp": 1787897976.5226345
+      },
+      {
+        "checkpoint": "ocr_confidence",
+        "node": "perception",
+        "passed": true,
+        "detail": "serial_tag confidence 0.63 < 0.8; secondary zoomed rescan recovered confidence 0.84.",
+        "timestamp": 1787897976.5226345
+      },
+      {
+        "checkpoint": "ocr_confidence",
+        "node": "perception",
+        "passed": true,
+        "detail": "serial_tag confidence 0.75 < 0.8; secondary zoomed rescan recovered confidence 0.84.",
+        "timestamp": 1787897976.5337512
+      },
+      {
+        "checkpoint": "rag_similarity",
+        "node": "rag",
+        "passed": false,
+        "detail": "Top cosine similarity 0.463 (< threshold 0.7) for query: 'CASE 580 SuperM bucket pin bushing hydraulic hose'.",
+        "timestamp": 1787898061.2955232
+      },
+      {
+        "checkpoint": "rag_similarity",
+        "node": "rag",
+        "passed": true,
+        "detail": "Top cosine similarity 0.735 (>= threshold 0.7) for query: 'hydraulic boom cylinder seal kit for JCB 4CX backhoe loader'.",
+        "timestamp": 1787898061.3425508
+      },
+      {
+        "checkpoint": "compatibility",
+        "node": "compatibility",
+        "passed": false,
+        "detail": "No candidate part could be fully validated against the detected machine/serial.",
+        "timestamp": 1787898061.3425508
+      },
+      {
+        "checkpoint": "compatibility",
+        "node": "compatibility",
+        "passed": false,
+        "detail": "No candidate part could be fully validated against the detected machine/serial.",
+        "timestamp": 1787898061.3495064
+      },
+      {
+        "checkpoint": "structured_output",
+        "node": "clarification",
+        "passed": false,
+        "detail": "Attempt 1/3 for JCB-3CX-HYDCYL-050HD failed Pydantic validation: 1 validation error for PurchaseRecommendation\nprice_usd\n  Input should be a valid number, unable to parse string as a number [type=float_parsing, input_value='$1560.0', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.9/v/float_parsing. Retrying with error injected into next prompt.",
+        "timestamp": 1787898061.3535163
+      },
+      {
+        "checkpoint": "structured_output",
+        "node": "clarification",
+        "passed": true,
+        "detail": "Attempt 2/3 for JCB-3CX-HYDCYL-050HD passed schema validation.",
+        "timestamp": 1787898061.3535163
+      }
+    ],
+    "retry_counts": {},
+    "error": null
+  }
+}

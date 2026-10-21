@@ -1,0 +1,62 @@
+services:
+  chromadb:
+    image: ghcr.io/chroma-core/chroma:0.5.15
+    container_name: spareparts-chromadb
+    ports:
+      - "8010:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/heartbeat')\" || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: spareparts-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - CHROMA_COLLECTION_NAME=spare_parts_catalog
+      - EMBEDDING_MODEL=all-MiniLM-L6-v2
+      - VISION_PROVIDER=${VISION_PROVIDER:-mock}
+      - VISION_MODEL=${VISION_MODEL:-claude-sonnet-5}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - UPLOAD_DIR=/app/uploads
+      - MAX_UPLOAD_MB=${MAX_UPLOAD_MB:-500}
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      chromadb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health')\" || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    container_name: spareparts-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_BASE_URL=http://backend:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  chroma_data:
+  uploads_data:
